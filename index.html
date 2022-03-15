@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>Memory Game</h1>
+</header>
+
+<section id="info">
+    <h2>Bitte geben Sie einen Namen ein, um das Spiel zu starten.</h2>
+</section>
+
+<div id="settings">
+    <input type="text" id="input-field-name" placeholder="Name ...">
+    <button id="submit-name" onclick="setName();"><a>Spiel beginnen</a></button>
+</div>
+<p id="error" style="color: red;"></p>
+<game id="game-grid-container"></game>
+<div id="table"></div>
+<div id="timeBox"></div>
+
+<footer>
+    <p>© Marcel Gusenbauer 2022</p>
+    <a id="github-link" href="https://github.com/MarcelGusenbauer" target="_blank">GitHub</a>
+    <a id="mail-link" href="mailto:marcel.gusenbauer@gmx.at" target="_blank">Mail</a>
+</footer>
+</html>
